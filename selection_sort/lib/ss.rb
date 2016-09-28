@@ -29,6 +29,3 @@ def selection_sort(array)
     swap(array, start_index, min_index)
   end
 end
-#
-# array = [22, 11, 99, 88, 9, 7, 42]
-# p selection_sort(array)
