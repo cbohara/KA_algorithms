@@ -1,4 +1,3 @@
-
 def binary_search(array, target)
   min_index = 0
   max_index = (array.length) - 1
