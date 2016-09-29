@@ -1,4 +1,4 @@
-require 'is'
+require 'spec_helper'
 
 RSpec.describe 'insert' do
   it 'should insert 2 into the front of the sorted array' do

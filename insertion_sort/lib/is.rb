@@ -16,8 +16,3 @@ def insert(array, right_index, key_value)
   end
   return array
 end
-
-
-p insert(array, 4, 2)
-p insert(array, 5, 9)
-p insert(array, 6, 6)
