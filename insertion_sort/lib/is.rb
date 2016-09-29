@@ -17,7 +17,7 @@ def insert(array, right_index, key_value)
   return array
 end
 
-array = [3, 5, 7, 11, 13, 2, 9, 6]
+
 p insert(array, 4, 2)
 p insert(array, 5, 9)
 p insert(array, 6, 6)
