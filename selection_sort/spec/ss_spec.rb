@@ -1,3 +1,5 @@
+require 'ss'
+
 RSpec.describe 'selection_sort' do
   it 'should return a sorted array' do
     array = [22, 11, 99, 88, 9, 7, 42]
