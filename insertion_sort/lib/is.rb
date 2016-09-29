@@ -5,9 +5,10 @@ def insert(array, right_index, key_value)
     # if array[i] > key_value then move all elements greater than key_value to the right
     if array[i] > key_value
       array[i+1] = array[i]
-    # if array[i] < key_value then insert key_value
+    # if array[i] < key_value then insert key_value and stop traversing down
     else array[i] < key_value
       array[i+1] = key_value
+      break
     end
   end
   # insert the key_value to index 0 if it is the smallest value
