@@ -17,3 +17,16 @@ def insert(array, right_index, key_value)
   end
   return array
 end
+
+def insertion_sort(array)
+  # loop through the input array
+  for i in 1..(array.length-1) do
+    # determine the index of the last value in the sorted subarray
+    right_index = i - 1
+    # determine the current key value that needs to be inserted into the sorted subarray
+    key_value = array[i]
+    # insert the value into the sorted subarray
+    insert(array, right_index, key_value)
+  end
+  return array
+end
