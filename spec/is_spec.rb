@@ -1,4 +1,4 @@
-require 'is'
+require 'insertion_sort'
 
 RSpec.describe 'insertion_sort' do
   it 'should return a sorted array' do

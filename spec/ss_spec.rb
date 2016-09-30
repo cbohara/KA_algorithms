@@ -1,4 +1,4 @@
-require 'ss'
+require 'selection_sort'
 
 RSpec.describe 'selection_sort' do
   it 'should return a sorted array' do

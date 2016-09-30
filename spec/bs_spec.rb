@@ -1,4 +1,4 @@
-require 'bs'
+require 'binary_search'
 
 RSpec.describe 'binary_search' do
   it 'should returns the index of the target value in the array' do

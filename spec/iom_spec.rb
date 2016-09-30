@@ -1,4 +1,4 @@
-require 'ss'
+require 'selection_sort'
 
 RSpec.describe 'index_of_minimum' do
   it 'should return the index of minimum value in the subarray (from the start_index to the end)' do

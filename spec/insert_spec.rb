@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'insertion_sort'
 
 RSpec.describe 'insert' do
   it 'should insert 2 into the sorted subarray' do
