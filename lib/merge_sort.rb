@@ -1,20 +1,16 @@
-def merge(left_array, right_array, array)
-  left_index, right_index, original_index = 0
+def merge_sort(array)
+  return array if array.length <= 1
 
-
+  middle = array.length / 2
+  left = merge_sort(array[0...middle])
+  right = merge_sort(array[middle..-1])
+  return merge(left, right)
 end
 
-
-def merge_sort(array)
-  n = array.length
-  if n < 2
-    return array
-  else
-    middle_index = n/2
-    left_array = array[0, middle_index]
-    right_array = array[middle_index+1, n]
-    merge_sort(left_array)
-    merge_sort(right_array)
-    merge(left_array, right_array, array)
+def merge(left, right)
+  result = []
+  until left.empty? || right.empty?
+    result << (left.first <= right.first ? left.shift : right.shift)
   end
+  return result + left + right
 end
