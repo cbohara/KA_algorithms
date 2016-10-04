@@ -10,20 +10,21 @@ end
 # returns the index of the pivot in the array after rearrangement
 def partition(array, start_index, end_index)
   pivot = array[end_index]
-  partition_index = start_index
-  for i in start_index..end_index
+  insert_index = start_index
+  for i in start_index...end_index
     if array[i] <= pivot
-      swap(array, array[i], array[partition_index])
-      partition_index += 1
+      swap(array, i, insert_index)
+      insert_index += 1
     end
   end
-  return partition_index
+  swap(array, insert_index, end_index)
+  return insert_index
 end
 
 # swap the location of two items in the array
-def swap(array, first_index, second_index)
-  temp = array[first_index]
-	array[first_index] = array[second_index]
-	array[second_index] = temp
+def swap(array, a_index, b_index)
+  temp = array[a_index]
+	array[a_index] = array[b_index]
+	array[b_index] = temp
   return array
 end
